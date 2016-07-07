@@ -53,7 +53,6 @@ func (o *Osc) setupOsc(addr string) {
 				fmt.Println("Server error: " + err.Error())
 				os.Exit(1)
 			}
-
 			if packet != nil {
 				switch packet.(type) {
 				default:
@@ -76,7 +75,6 @@ func (o *Osc) setupOsc(addr string) {
 	}()
 
 	reader := bufio.NewReader(os.Stdin)
-
 	for {
 		c, err := reader.ReadByte()
 		if err != nil {
