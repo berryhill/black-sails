@@ -49,9 +49,15 @@ func (m *Monome) listenOutput() {
 			for k := 0; k < 8; k++ {
 				for j := 0; j < 16; j++ {
 					if m.Rows[k].Buttons[j].Led == true {
-						m.Rows[k].Buttons[j].SendMessage(1)
+						if m.Rows[k].Buttons[j].LedPast == false {
+							m.Rows[k].Buttons[j].SendMessage(1)
+							m.Rows[k].Buttons[j].LedPast = true
+						}
 					} else {
-						m.Rows[k].Buttons[j].SendMessage(0)
+						if m.Rows[k].Buttons[j].LedPast == true {
+							m.Rows[k].Buttons[j].SendMessage(0)
+							m.Rows[k].Buttons[j].LedPast = false
+						}
 					}
 				}
 			}
@@ -62,11 +68,14 @@ func (m *Monome) listenOutput() {
 }
 
 func (m *Monome) TestScan() {
-	for k := 0; k < 8; k++ {
-		for j := 0; j < 16; j++ {
-			m.Rows[k].Buttons[j].LedOn()
-			time.Sleep(50 * time.Millisecond)
-			m.Rows[k].Buttons[j].LedOff()
+	for k := 0; k < 16; k++ {
+		for j := 0; j < 8; j++ {
+			m.Rows[j].Buttons[k].LedOn()
+		}
+
+		time.Sleep(250 * time.Millisecond)
+		for j := 0; j < 8; j++ {
+			m.Rows[j].Buttons[k].LedOff()
 		}
 	}
 }
