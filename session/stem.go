@@ -24,7 +24,7 @@ func NewStem(name string, index int, monome *monome.Monome) *Stem {
 }
 
 func (s *Stem) getParsedPlayPosition() (int, int) {
-	course_position := (s.PlayPosition / 16) % 4
+	course_position := (s.PlayPosition / 16) % 8
 	fine_position := s.PlayPosition % 16
 	return course_position, fine_position
 }

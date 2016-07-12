@@ -27,7 +27,7 @@ func (br *ButtonRow) SetOneLed(index int) {
 }
 
 func (br *ButtonRow) SetBarLed(index int) {
-	for k := 0; k<4; k++ {
+	for k := 0; k<8; k++ {
 		if k == index {
 			br.Buttons[k].LedOn()
 		} else {
