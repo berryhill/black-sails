@@ -2,6 +2,7 @@ package monome
 
 import (
 	osc "github.com/kward/go-osc"
+	"time"
 )
 
 type Button struct {
@@ -30,6 +31,15 @@ func (b *Button) LedOn() {
 
 func (b *Button) LedOff() {
 	b.Led = false
+}
+
+func(b *Button) LedFlicker() {
+	go func() {
+		b.Led = true
+		time.Sleep(10 * time.Millisecond)
+		b.Led = false
+		time.Sleep(10 * time.Millisecond)
+	}()
 }
 
 func (b *Button) SendMessage(bool int) {

@@ -15,3 +15,23 @@ func NewButtonRow(index int) *ButtonRow {
 
 	return br
 }
+
+func (br *ButtonRow) SetOneLed(index int) {
+	for k := 0; k<16; k++ {
+		if k == index {
+		br.Buttons[k].LedOn()
+	} else {
+		br.Buttons[k].LedOff()
+		}
+	}
+}
+
+func (br *ButtonRow) SetBarLed(index int) {
+	for k := 0; k<4; k++ {
+		if k == index {
+			br.Buttons[k].LedOn()
+		} else {
+			br.Buttons[k].LedOff()
+		}
+	}
+}

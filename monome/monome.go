@@ -7,9 +7,9 @@ import (
 )
 
 type Monome struct {
-	//Client 		*osc.Client
-	Id 			int
-	Rows			[]*ButtonRow
+	//Client 				*osc.Client
+	Id 						int
+	Rows					[]*ButtonRow
 }
 
 func NewMonome(id int) *Monome {
@@ -67,15 +67,27 @@ func (m *Monome) listenOutput() {
 	}()
 }
 
-func (m *Monome) TestScan() {
-	for k := 0; k < 16; k++ {
-		for j := 0; j < 8; j++ {
-			m.Rows[j].Buttons[k].LedOn()
+func (m *Monome) TestFlicker() {
+	for {
+		for k := 0; k < 8; k++ {
+			m.Rows[k].Buttons[0].LedFlicker()
+			time.Sleep(time.Millisecond)
 		}
+	}
 
-		time.Sleep(250 * time.Millisecond)
-		for j := 0; j < 8; j++ {
-			m.Rows[j].Buttons[k].LedOff()
+}
+
+func (m *Monome) TestScan() {
+	for {
+		for k := 0; k < 16; k++ {
+			for j := 0; j < 8; j++ {
+				m.Rows[j].Buttons[k].LedOn()
+			}
+
+			time.Sleep(250 * time.Millisecond)
+			for j := 0; j < 8; j++ {
+				m.Rows[j].Buttons[k].LedOff()
+			}
 		}
 	}
 }
