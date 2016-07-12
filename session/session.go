@@ -6,6 +6,9 @@ import (
 	"github.com/black-sails/monome"
 )
 
+var OSC *Osc
+var OscM *Osc
+
 type Session struct {
 	Monome 					*monome.Monome
 	Tracks	 				[]*Track
@@ -17,7 +20,9 @@ func NewSession() *Session {
 	s.Monome = monome.NewMonome(1)
 	s.Tracks = append(s.Tracks, NewTrack(s.Monome))
 
-	OSC := NewOsc("127.0.0.1", 4444, "127.0.0.1:6666", s)
+	OSC = NewOsc("127.0.0.1", 4444, "127.0.0.1:6666", s)
+	OscM = NewOsc("127.0.0.1", 7777, "127.0.0.1:5555", s)
+
 	fmt.Println(OSC.Client)
 
 	return s

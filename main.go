@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"bufio"
+	"os"
 
 	//"github.com/black-sails/osc"
 	"github.com/black-sails/session"
@@ -26,4 +28,16 @@ func main() {
 	//		time.Sleep(150 * time.Millisecond)
 	//	}
 	//}()
+
+	reader := bufio.NewReader(os.Stdin)
+	for {
+		c, err := reader.ReadByte()
+		if err != nil {
+			os.Exit(0)
+		}
+
+		if c == 'q' {
+			os.Exit(0)
+		}
+	}
 }

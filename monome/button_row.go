@@ -16,6 +16,12 @@ func NewButtonRow(index int) *ButtonRow {
 	return br
 }
 
+func (br *ButtonRow) SetLedOff() {
+	for k := 0; k < 16; k++ {
+		br.Buttons[k].LedOff()
+	}
+}
+
 func (br *ButtonRow) SetOneLed(index int) {
 	for k := 0; k<16; k++ {
 		if k == index {

@@ -8,7 +8,10 @@ type Track struct {
 
 func NewTrack(monome *monome.Monome) *Track {
 	t := new(Track)
-	t.Stems = append(t.Stems, NewStem("test", 1, monome))
+
+	for k := 1; k < 5; k++ {
+		t.Stems = append(t.Stems, NewStem("test", k, monome))
+	}
 
 	return t
 }
