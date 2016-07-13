@@ -15,6 +15,7 @@ import (
 
 type Osc struct {
 	Client 			*osc.Client
+	Session 		*Session
 }
 
 func NewOsc(ip string, port_out int, addr string, S *Session) *Osc {
@@ -25,6 +26,7 @@ func NewOsc(ip string, port_out int, addr string, S *Session) *Osc {
 	//message.Append(int32(1))
 	//client.Send(message)
 
+	o.Session = S
 	o.setupOsc(addr, S)
 
 	return o
@@ -34,9 +36,11 @@ func (o *Osc) setupOsc(addr string, S *Session) {
 	server := &osc.Server{Addr: addr}
 
 	server.Handle("/position", func(msg *osc.Message) {
-		track := msg.Arguments[0].(int32)
+		stem := msg.Arguments[0].(int32)
 		position := msg.Arguments[1].(int32)
-		S.Tracks[0].Stems[track - 1].SetPlayPosition(int(position))
+		S.Tracks[0].Stems[stem - 1].SetPlayPosition(int(position))
+
+		//go S.Tracks[0].Stems[stem - 1].QuantizedWork()
 	})
 
 	server.Handle("/m/grid/key", func(msg *osc.Message) {

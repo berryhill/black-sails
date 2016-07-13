@@ -7,13 +7,13 @@ import (
 )
 
 type Monome struct {
-	//Client 				*osc.Client
 	Id 						int
 	Rows					[]*ButtonRow
 }
 
 func NewMonome(id int) *Monome {
 	m := new(Monome)
+
 	//osc.NewClient("127.0.0.1", 5555)
 	m.Id = id
 	for k := 0; k < 8; k++ {
@@ -37,7 +37,7 @@ func (m *Monome) listenInput() {
 					}
 				}
 			}
-			time.Sleep(time.Millisecond)
+			time.Sleep(10 * time.Microsecond)
 			//println("monome-out")
 		}
 	}()

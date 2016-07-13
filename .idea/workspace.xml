@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c95b43af-e01e-4d68-b58b-8ab8cb2fc33c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/session/monome_osc.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/black-sails" afterPath="$PROJECT_DIR$/black-sails" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monome/button_row.go" afterPath="$PROJECT_DIR$/monome/button_row.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monome/monome.go" afterPath="$PROJECT_DIR$/monome/monome.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session/osc.go" afterPath="$PROJECT_DIR$/session/osc.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session/session.go" afterPath="$PROJECT_DIR$/session/session.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session/stem.go" afterPath="$PROJECT_DIR$/session/stem.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/session/track.go" afterPath="$PROJECT_DIR$/session/track.go" />
     </list>
     <ignored path="black-sails.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +33,8 @@
       <file leaf-file-name="osc.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session/osc.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="630">
+              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="56" />
               <folding>
                 <element signature="e#17#181#0" expanded="true" />
               </folding>
@@ -46,8 +45,8 @@
       <file leaf-file-name="monome.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monome/monome.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-135">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="405">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding>
                 <element signature="e#16#64#0" expanded="true" />
               </folding>
@@ -58,8 +57,8 @@
       <file leaf-file-name="button.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/monome/button.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="765">
+              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="24" />
               <folding>
                 <element signature="e#16#65#0" expanded="true" />
               </folding>
@@ -79,25 +78,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="session.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/session/session.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+            <state relative-caret-position="94">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding>
-                <element signature="e#17#68#0" expanded="true" />
+                <element signature="e#17#98#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stem.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stream.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../rakyll/portmidi/stream.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="monome_osc.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/session/monome_osc.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+              <folding>
+                <element signature="e#17#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stem.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/session/stem.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+            <state relative-caret-position="109">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
-                <element signature="e#17#60#0" expanded="true" />
+                <element signature="e#17#87#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,14 +173,16 @@
       <list>
         <option value="$PROJECT_DIR$/monome/led.go" />
         <option value="$PROJECT_DIR$/monome/button.go" />
-        <option value="$PROJECT_DIR$/monome/monome.go" />
         <option value="$PROJECT_DIR$/osc/osc.go" />
         <option value="$PROJECT_DIR$/monome/button_row.go" />
         <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/session/session.go" />
         <option value="$PROJECT_DIR$/session/track.go" />
+        <option value="$PROJECT_DIR$/monome/osc.go" />
+        <option value="$PROJECT_DIR$/monome/monome.go" />
+        <option value="$PROJECT_DIR$/session/monome_osc.go" />
         <option value="$PROJECT_DIR$/session/osc.go" />
         <option value="$PROJECT_DIR$/session/stem.go" />
+        <option value="$PROJECT_DIR$/session/session.go" />
       </list>
     </option>
   </component>
@@ -170,7 +193,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="715" />
+    <option name="x" value="711" />
     <option name="y" value="22" />
     <option name="width" value="1205" />
     <option name="height" value="1054" />
@@ -353,7 +376,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Go" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="/Applications/Ableton Live 9 Suite 4.app/Contents/App-Resources/MIDI Remote Scripts/LiveOSC" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../midi-test" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="go.libraries.notification.had.been.shown" value="true" />
@@ -361,13 +384,15 @@
     <property name="configurable.Global.libraries.is.expanded" value="true" />
     <property name="configurable.Project.libraries.is.expanded" value="true" />
     <property name="configurable.Module.libraries.is.expanded" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/matthew/coding/golang/src/github.com/black-sails/session/monome_osc.go" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/monome" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/session" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -893,7 +918,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="715" y="22" width="1205" height="1054" extended-state="0" />
+    <frame x="711" y="22" width="1205" height="1054" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1015,7 +1040,7 @@
         <state relative-caret-position="240">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
-            <element signature="e#17#68#0" expanded="true" />
+            <element signature="e#17#98#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1025,7 +1050,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#17#60#0" expanded="true" />
+            <element signature="e#17#87#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1255,14 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monome/button_row.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1281,23 +1298,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/monome/button.go">
+    <entry file="file://$PROJECT_DIR$/monome/button_row.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/session/session.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
-          <folding>
-            <element signature="e#17#68#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1311,32 +1316,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/monome/button.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="24" />
+          <folding>
+            <element signature="e#16#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/monome/monome.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding>
             <element signature="e#16#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/session/stem.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../rakyll/portmidi/stream.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session/monome_osc.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+          <folding>
+            <element signature="e#17#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/session/osc.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="630">
+          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="56" />
           <folding>
             <element signature="e#17#181#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/session/stem.go">
+    <entry file="file://$PROJECT_DIR$/session/session.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+        <state relative-caret-position="94">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
           <folding>
-            <element signature="e#17#60#0" expanded="true" />
+            <element signature="e#17#98#0" expanded="true" />
           </folding>
         </state>
       </provider>
